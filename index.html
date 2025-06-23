@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baldebour Network • Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="icon" type="image/x-icon" href="./assets/media/images/logo/logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Fondo estilo Minecraft -->
+    <div class="minecraft-bg"></div>
+
+    <!-- Header -->
+    <header>
+        <div class="logo-container">
+            <div class="logo">
+                <i class="fas fa-crown"></i>
+            </div>
+            <h1 class="logo-text">Baldebour Network</h1>
+        </div>
+        <div class="nav-buttons">
+            <a href="https://tienda.baldebour.com/" class="nav-btn">TIENDA
+            </a>
+            <a href="https://discord.baldebour.com/" class="nav-btn">DISCORD
+            </a>
+        </div>
+    </header>
+
+    <!-- Contenido principal -->
+    <main>
+        <!-- Sección Hero -->
+        <section class="hero-section">
+            <p class="hero-subtitle">
+                Baldebour Network te espera en un mundo de bloques lleno de misterios, 
+                batallas épicas y alianzas legendarias. Únete a nuestra comunidad y forja tu destino.
+            </p>
+            
+            <div class="server-ip-container">
+                <span class="server-ip-label">CONECTATE A NUESTRO SERVIDOR</span>
+                <div class="server-ip">PLAY.BALDEBOUR.COM</div>
+                <button class="copy-ip" onclick="copyIP()">
+                COPIAR IP</button>
+            </div>
+        </section>
+
+        <!-- Widget de Discord 
+        <div class="discord-container">
+            <div class="discord-header">
+                <div class="discord-logo">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <h3 class="discord-title">ÚNETE A NUESTRA COMUNIDAD EN DISCORD</h3>
+            </div>
+            <p class="discord-members">+1,200 jugadores conectados</p>
+            <a href="https://discord.gg/baldebour" class="discord-join" target="_blank">
+                <i class="fab fa-discord"></i> UNIRSE AL SERVIDOR
+            </a>
+        </div> -->
+
+        <!-- Sección del Equipo -->
+        <section class="team-section">
+            <h2 class="section-title">NUESTRO EQUIPO</h2>
+            <div class="cards-container">
+                <!-- Tarjeta 1 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="minecraft-skin">
+                            <img src="https://mc-heads.net/avatar/MHF_Steve" alt="Skin Minecraft" id="skin1">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="member-name">MaximoDev</h3>
+                        <p class="member-role">DESARROLLADOR</p>
+                        <p class="member-desc">
+                            Desarrollador principal del servidor. Con más de 5 años de experiencia en la modificación de servidores de Minecraft.
+                        </p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://losciruja.life/" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://www.youtube.com/@Maximo-Dev" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="minecraft-skin">
+                            <img src="https://mc-heads.net/avatar/MHF_Alex" alt="Skin Minecraft" id="skin2">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="member-name">OnlyAsIAm</h3>
+                        <p class="member-role">FUNDADOR</p>
+                        <p class="member-desc">
+                            Encargado de la gestión diaria del servidor, eventos y comunidad. Con experiencia en creación de contenido.
+                        </p>
+                        <div class="social-links">
+                            <a href="https://kick.com/rafayt" class="social-link"><i class="fa-brands fa-kickstarter"></i></a>
+                            <a href="https://losciruja.life/" class="social-link"><i class="fab fa-discord"></i></a>
+                            <a href="https://www.youtube.com/@OnlyAsIAmm" class="social-link"><i class="fab fa-youtube"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="team-card">
+                    <div class="card-header">
+                        <div class="minecraft-skin">
+                            <img src="https://mc-heads.net/avatar/MHF_Herobrine" alt="Skin Minecraft" id="skin3">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <h3 class="member-name">?</h3>
+                        <p class="member-role">STAFF</p>
+                        <p class="member-desc">
+                            Puedes ser el siguiente en ser parte de nuestro equipo. Comunicate con nosotros mediante Discord
+                        </p>
+                        <div class="social-links">
+                            <a href="https://discord.baldebour.com/" class="social-link"><i class="fab fa-discord"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Desarrollo -->
+        <section class="development-section">
+            <h2 class="section-title">NUESTRO PROGRESO</h2>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/C2l2l3b.png" alt="Castillo principal" class="carousel-img">
+                        <!-- <p class="carousel-caption"></p> -->
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/cpciTI0.png" alt="Desarrollo 2" class="carousel-img">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://i.imgur.com/Qpj9IxK.png" alt="Desarrollo 3" class="carousel-img">
+                    </div>
+                </div>
+                <div class="carousel-nav">
+                    <button class="carousel-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                    <button class="carousel-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                </div>
+                <div class="carousel-dots">
+                    <span class="dot active"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-column">
+                <h3>BALDEBOUR</h3>
+                <p style="color: var(--mc-gray); line-height: 1.6; margin-bottom: 1.5rem;">
+                    Un servidor MMORPG de Minecraft único, donde la aventura y la comunidad se unen para crear experiencias inolvidables.
+                </p>
+                <div class="footer-social">
+                    <a href="https://discord.baldebour.com/"><i class="fa-brands fa-discord"></i></a>
+                    <a href="https://x.baldebour.com/"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://yt.baldebour.com/"><i class="fab fa-youtube"></i></a>
+                    <a href="https://ig.baldebour.com"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>ENLACES</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> INICIO</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> TIENDA</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> REGLAS</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> VOTAR</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> ESTADÍSTICAS</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>RECURSOS</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> WIKI</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> GUÍAS</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> PARCHES</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> SOPORTE</a></li>
+                    <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h3>CONTACTO</h3>
+                <ul class="footer-links">
+                    <li><a href="#"><i class="fas fa-envelope"></i> admin@baldebour.com</a></li>
+                    <li><a href="#"><i class="fab fa-discord"></i> discord.baldebour.com</a></li>
+                    <li><a href="#"><i class="fas fa-globe"></i> www.baldebour.com</a></li>
+                    <li><a href="#"><i class="fas fa-server"></i> play.baldebour.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p> Baldebour Network • 2025 &copy; Diseñado por MaximoDev</p>
+        </div>
+    </footer>
+
+    <script>
+        // API de skins de Minecraft
+        const teamMembers = [
+            { id: "skin1", username: "MaximoDev" },
+            { id: "skin2", username: "OnlyAsIAm" },
+            { id: "skin3", username: "elytra689k" }
+        ];
+
+        // Función para cargar skins
+        function loadSkins() {
+            teamMembers.forEach(member => {
+                const skinElement = document.getElementById(member.id);
+                if (skinElement) {
+                    skinElement.src = `https://mc-heads.net/avatar/${member.username}/100`;
+                    skinElement.style.imageRendering = "pixelated";
+                }
+            });
+        }
+
+        // Función para copiar IP
+        function copyIP() {
+            const ip = "play.baldebour.net";
+            navigator.clipboard.writeText(ip).then(() => {
+                const originalText = document.querySelector('.copy-ip').innerHTML;
+                document.querySelector('.copy-ip').innerHTML = '<i class="fas fa-check"></i> IP COPIADA';
+                setTimeout(() => {
+                    document.querySelector('.copy-ip').innerHTML = originalText;
+                }, 2000);
+            }).catch(err => {
+                console.error('Error al copiar IP: ', err);
+            });
+        }
+
+        // Carrusel
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel-item');
+        const dots = document.querySelectorAll('.dot');
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            if (index >= totalSlides) {
+                currentSlide = 0;
+            } else if (index < 0) {
+                currentSlide = totalSlides - 1;
+            } else {
+                currentSlide = index;
+            }
+            
+            const carousel = document.querySelector('.carousel');
+            carousel.style.transform = `translateX(-${currentSlide * 100}%)`;
+            
+            // Actualizar puntos
+            dots.forEach((dot, i) => {
+                dot.classList.toggle('active', i === currentSlide);
+            });
+        }
+
+        // Event listeners
+        document.querySelector('.next-btn').addEventListener('click', () => {
+            showSlide(currentSlide + 1);
+        });
+
+        document.querySelector('.prev-btn').addEventListener('click', () => {
+            showSlide(currentSlide - 1);
+        });
+
+        dots.forEach((dot, i) => {
+            dot.addEventListener('click', () => {
+                showSlide(i);
+            });
+        });
+
+        // Auto slide
+        setInterval(() => {
+            showSlide(currentSlide + 1);
+        }, 5000);
+
+        // Cargar skins cuando la página esté lista
+        document.addEventListener('DOMContentLoaded', loadSkins);
+
+        // Efecto de tecleo para títulos
+        const titles = document.querySelectorAll('.hero-title, .section-title');
+        titles.forEach(title => {
+            const text = title.textContent;
+            title.textContent = '';
+            
+            let i = 0;
+            const typingEffect = setInterval(() => {
+                if (i < text.length) {
+                    title.textContent += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(typingEffect);
+                }
+            }, 100);
+        });
+    </script>
+</body>
+</html>
